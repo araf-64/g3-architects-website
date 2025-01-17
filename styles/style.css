@@ -14,6 +14,9 @@
 }
 
 /* shared color section */
+.text-primary{
+    color: #ff900e;
+}
 .dark-01{
     color: #131313;
 }
@@ -26,6 +29,26 @@
 .header-bg{
     background-color: rgba(255, 144, 14, 0.1);
 }
+
+/* shared button styles */
+.btn-primary{
+    padding: 20px 25px;
+    font-size: 1.25em;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #ff900e;
+}
+/* shared main style */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main>section{
+    margin-top: 130px;
+}
+
 
 /* header styles */
 .header{
@@ -61,10 +84,49 @@
 
 /* banner related styles */
 .banner-container{
-
+    
 }
 .banner-content{
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-image{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* teams and features section styles */
+.teams{
+    align-items: center;
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.team-features{
+    max-width: 530px;
+    margin: 0 auto;
+}
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#quick-list{
+    font-weight: 500;
+}
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-items, .teams{
+        flex-direction: column;
+    }
 }
